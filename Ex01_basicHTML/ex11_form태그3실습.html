@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  <h1>이메일 작성</h1>
-  <form action="http://localhost/login.php" method="post" autocomplete="on"> 
-    <p>이 름: <input type="text" ></p> 
-    <p>이메일: <input type="text" name="이메일" pattern="[a-zA-Z].+[0-9]"></p> 
-    <p>내 용: <textarea cols="30" rows="10"></textarea>></p> 
-    
-    <button type="button">Send</button>
-    <button type="button">Reset</button>
-    
-</form>
+  <!-- rows ="한번에 보여줄 줄 갯수" cols="한줄에 보여줄 글자 수 " -->
+  <!-- <textarea rows="10" cols="33"> </textarea> -->
+
+  <h3>이메일 작성</h3>
+  <form>
+    <label for="name"> 이름 :</label>
+    <input type="text" value="박연미" readonly><br>
+    이메일:<input type="email" required><br>
+    내 용:<br>
+    <textarea rows="5" cols="50"></textarea><br>
+    <input type="submit" value="Send" />
+    <input type="reset" value="Reset" />
+  </form>
+
 </body>
+
 </html>
