@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 인라인 자바 스크립트 : 보통 특정 이벤트를 호출 
+    alert(); // 화면에 알람창 띄워준다
+  -->
+  <!-- 버튼1 -->
+  <button onclick="alert('안녕!')">눌러보세요!</button>
+  <p class="p1"><span class="s1">아이디</span><span class="s2"> :<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s2">비밀번호</span><span class="s3"> :<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s4">default value</span><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+
+<!-- 버튼2 -->
+<form action="http://www.localhost:8080">
+  <input type="button" value="인사" onclick="alert('hello!')">
+  <!-- <input type="submit" value="입장"> -->
+</form>
+<!-- 버튼3 -->
+<form action="http://localhost/order.php"> <!-- http://localhost/order.php?check1=green&check2=S -->
+  <h3>색상(단일선택)</h3>
+  <p>
+      <input type="radio" name="check1" value="red"> <!-- 같은 name값을 가지면 택1의 조건 설정이 됨 (grouping)-->
+      <input type="radio" name="check1" value="green">
+      <input type="radio" name="check1" value="blue">
+  </p>
+  <h3>사이즈(단일선택)</h3>
+  <p>
+      <input type="radio" name="check2" value="L">
+      <input type="radio" name="check2" value="M" checked> <!-- checked : 기본값 부여 -->
+      <input type="radio" name="check2" value="S">
+  </p>
+  <h3>수량(다중선택)</h3> <!-- http://localhost/order.php?check1=green&check2=L&dum=1&dum=5&dum=10 -->
+  <p>
+      <input type="checkbox" name="dum" value="1" checked>
+      <input type="checkbox" name="dum" value="5">
+      <input type="checkbox" name="dum" value="10">
+      <input type="checkbox" name="dum" value="50">
+      <input type="checkbox" name="dum" value="100">
+  </p>
+  <input type="submit">
+</form>
+
+</body>
+</html>
