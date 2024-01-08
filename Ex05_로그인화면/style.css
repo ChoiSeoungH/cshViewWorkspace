@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* reset CSS */
+a{ text-decoration: none; color: #222;}
+h1,h2,h3,h4,h5,h6{ margin: 0; font-weight: normal;}
+button{ cursor: pointer; outline: none; border: none;}
+/* body font-fmaily를 상속받지 않는 태그들  */
+button,input,textarea{font-family: 'Montserrat', sans-serif;}
+body{
+  margin: 0;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+main{
+  height: 100%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form{
+  /* border: 2px solid black; */
+  box-sizing: border-box;
+  width: 600px;
+  /* height: 400px; */
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  /* x축 y축 퍼지는공간 그림자색깔 */
+  box-shadow: 0 0 20px darkgray;
+
+}
+.login-form h2{
+  text-transform: capitalize;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.sns-login{
+  /* 모바일 환경에서 sns 버튼 새로배치 해줄려고 */
+  display: flex;
+}
+
+.btn{
+  /* flex:1;   1 0 0*/
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 3px;
+  color: #fff;
+  margin-right: 3px;
+  font-size: 12px;
+}
+.btn:last-child{
+  margin-right: 0;
+}
+.btn.facebook{
+  background-color: #1877F2;
+}
+.btn.twitter{
+  background-color: #1DA1F2;
+
+}
+.btn.google{
+  background-color: #dd4b39;;
+}
+
+.field{
+  margin: 20px 0;
+  display: flex;
+}
+.field label{
+  margin-left: 5px;
+  flex:1;
+}
+.field input{
+  flex: 4;
+}
+.btn-login{
+/* width: 80px; */
+/* height: 30px; */
+  padding: 5px 40px;
+  color: #fff;
+  background-color: royalblue;
+  border-radius: 3px;
+/* 한개 속성 이동할때 구지 flex 박스 만들필요 없이 float 로 가능하다 */
+  float: right;
+}
+/* 
+[1] 고정 width 값을 100%
+[2] flex : row -> column 
+*/
+@media(max-width : 768px){
+  .login-form{
+    width: 100%;
+  }
+  .sns-login{
+    flex-direction: column;
+  }
+  .btn{
+    margin: 5px 0;
+  }
+  .field{
+    flex-direction: column;
+    margin: 10px 0 ;
+  }
+  .btn-login{
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
