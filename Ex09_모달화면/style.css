@@ -3,52 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:300,400,500,700,700&display=swap');
 /* Fontawesome 4.7 */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 /* reset CSS */
-a {
-  text-decoration: none;
-  color: #222;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-weight: normal;
-}
-
-button {
-  cursor: pointer;
-  outline: none;
-  border: none;
-}
-
-input,
-textarea,
-select {
+a{ text-decoration: none; color: #222;}
+h1,h2,h3,h4,h5,h6{ margin: 0; font-weight: normal;}
+button{ cursor: pointer; outline: none; border: none;}
+input,textarea,select{
   outline: none;
 }
 
-body {
+body{
   margin: 0;
   height: 100vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat' , sans-serif;
   /* font-family: 'Noto Sans KR' , sans-serif; */
   /* background-color: lightgrey */
 }
-
-button,
-input,
-textarea,
-select {
+button,input,textarea,select{
   /* font-family: 'Noto Sans KR' , sans-serif; */
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat' , sans-serif;
 }
 
-.btn-open {
+.btn-open{
   width: 400px;
   height: 80px;
   background-color: crimson;
@@ -58,18 +33,17 @@ select {
   display: block;
   margin: 10px;
 }
-
 /* 팝업창의 위치만 조절  */
-.modal {
+.modal{
   /* border: 1px solid black; */
   /* 보이는 창 화면안에서 위치값을 조정 : 스크롤 상관 없음  */
   position: fixed;
   /* 항상 보이는 창에 정중앙에 위치 %50*/
-  top: 50%;
-  left: 50%;
+  top:50%;
+  left:50%;
   transform: translate(-50%, -50%) scale(0.7);
   /* 화면에 레이아웃이 겹칠때 레이아웃 우선순위 줄수있다 : 디폴트 0 
-  z-index 가 높을 수록 먼저 띈다 
+   z-index 가 높을 수록 먼저 띈다 
   */
   z-index: 10;
   opacity: 0;
@@ -78,7 +52,7 @@ select {
 
 }
 
-.modal.active {
+.modal.active{
   opacity: 1;
   visibility: visible;
   /* transform 은 한 태그당 한개만 먹힘  */
@@ -87,7 +61,7 @@ select {
 
 
 /* 팝업창의 디자인 담당  */
-.modal-content {
+.modal-content{
   /* margin: auto; */
   /* border: 1px solid blue; */
   width: 600px;
@@ -97,65 +71,58 @@ select {
   position: relative;
   overflow: hidden;
 
-}
-
-.modal-content>div {
+} 
+.modal-content > div{
   padding: 20px;
 }
-
-.photo {
+.photo{
   background: url('office.jpg') no-repeat center right;
   /* width: 300px; */
   /* height: 500px; */
   background-size: cover;
   /* 1 0 0 */
-  flex: 1;
+  flex: 1; 
 }
-
-.desc {
+.desc{
   flex: 2;
   text-align: center;
 }
-
-.desc-header {
+.desc-header{
   margin: 20px 0;
 }
-
-.btn-close {
+.btn-close{
   position: absolute;
   top: 0px;
-  right: 5px;
+  right:5px;
   font-size: 25px;
   background-color: transparent;
   color: #222;
 }
-
-.btn-close:hover {
+.btn-close:hover{
   color: crimson;
 }
-
-.desc-content input[type=email] {
+.desc-content input[type=email]{
   display: block;
   width: 95%;
   padding: 7px;
   text-align: center;
   margin-bottom: 10px;
 }
-
-.btn-send {
+.btn-send{
   display: block;
   width: 100%;
   background-color: crimson;
   color: #fff;
   padding: 7px;
+
 }
 
-.desc-content p {
+.desc-content p{
   line-height: 1.7em;
   font-size: 15px;
 }
 
-.overlay {
+.overlay{
   /* 모달창에 집중하기 위해서 나머지 부분은 검은색으로 배경 지정  */
   background-color: #00000096;
   width: 100%;
@@ -167,28 +134,25 @@ select {
   transition: 0.5s;
   opacity: 0;
 }
-
-.overlay.active {
+.overlay.active{
   visibility: visible;
   opacity: 1;
 }
 
 @media (max-width: 767px) {
-
-  .modal-content {
+ 
+  .modal-content{
     width: 100%;
     flex-direction: column;
   }
-
-  .modal-content>div {
+  .modal-content > div{
     /* 보통 모바일 화면은 350을 
     기준값으로 해줌 
     */
     width: 350px;
     /* flex: 1; */
   }
-
-  .photo {
+  .photo{
     /* height: 250px; */
     /* photo flex: 1 를 줬기 때문에 height 안먹는다 
       flex-basis 를 사용한다 : row ==> width column : hight;

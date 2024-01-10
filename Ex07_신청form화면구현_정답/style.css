@@ -1,72 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:300,400,500,700,700&display=swap');
 /* Fontawesome 4.7 */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 /* reset CSS */
-a {
-  text-decoration: none;
-  color: #222;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-weight: normal;
-}
-
-button {
-  cursor: pointer;
-  outline: none;
-  border: none;
-}
-
-input,
-textarea,
-select {
+a{ text-decoration: none; color: #222;}
+h1,h2,h3,h4,h5,h6{ margin: 0; font-weight: normal;}
+button{ cursor: pointer; outline: none; border: none;}
+input,textarea,select{
   outline: none;
 }
 
-body {
+body{
   margin: 0;
   height: 100vh;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans KR' , sans-serif;
   font-size: 15px;
   font-weight: 300;
   /* normal 400 bold 600  */
 }
-
-button,
-input,
-textarea,
-select {
-  font-family: 'Noto Sans KR', sans-serif;
+button,input,textarea,select{
+  font-family: 'Noto Sans KR' , sans-serif;
 }
 
-section {
+section{
   width: 1200px;
   /* border: 1px solid black; */
-  /* 세션을 중앙으로 만들고 싶다 요소가 한개밖에 없을때는 그냥 margin: auto*/
+    /* 세션을 중앙으로 만들고 싶다 요소가 한개밖에 없을때는 그냥 margin: auto*/
   margin: auto;
 }
-
 /* header */
-.consulting-header {
+.consulting-header{
   text-align: center;
 }
-
-.consulting-header h1 {
+.consulting-header h1{
   font-size: 32px;
 }
-
-.consulting-header span {
+.consulting-header span{
   color: crimson;
 }
-
-.consulting-header hr {
+.consulting-header hr{
   border: none;
   width: 100px;
   height: 2px;
@@ -75,63 +46,51 @@ section {
 
 /* form */
 
-.consulting-form form {
+.consulting-form form{
   border-top: 5px solid #ddd;
   margin: 30px;
   padding: 30px;
   /* border: 2px solid blue; */
 
 }
-
-form .row {
+form .row{
   /* border: 1px solid red; */
   display: flex;
 }
-
-.row .field {
+.row .field{
   display: flex;
   flex-direction: column;
   margin-right: 30px;
   flex: 1;
 }
-
-.row .field label {
+.row .field label{
   margin: 5px 0;
 }
-
-.row .field input,
-select,
-textarea {
+.row .field input, select, textarea{
   border: 1px solid #ddd;
   padding: 7px;
 }
-
 .row .field input:hover,
 textarea :hover,
-select :hover {
+select :hover{
   border: 1px solid skyblue;
   box-shadow: 0 0 5px skyblue;
 }
-
-.row .field input:focus,
-textarea:focus {
+.row .field input:focus , textarea:focus {
   border: 1px solid skyblue;
   box-shadow: 0 0 5px skyblue;
 }
-
-form label em {
+form label em{ 
   color: red;
 }
-
 /* form textarea{} */
 
 /* policy */
 /* .policy{} */
-.policy h4 {
+.policy h4{
   margin: 10px 0;
 }
-
-.policy iframe {
+.policy iframe{
   border: 1px solid black;
   width: 100%;
   height: 100px;
@@ -140,8 +99,7 @@ form label em {
   /*  iframe 외부 화면만 조절할 수 있다 : 독립존재하는 html 문서이기 때문에*/
   /* color: red; */
 }
-
-.btn-sumbit {
+.btn-sumbit{
   padding: 10px 50px;
   border-radius: 3px;
   background-color: skyblue;
@@ -149,34 +107,28 @@ form label em {
   margin: auto;
   margin-top: 20px;
 }
-
-.btn-sumbit:hover {
+.btn-sumbit:hover{
   background-color: royalblue;
   color: #fff;
 }
 
+
 /* 모바일 환경 */
-@media screen and (max-width: 767px) {
-  section {
+@media screen and (max-width: 767px){
+  section{
     width: 100%;
+    box-sizing: border-box;
   }
-
-  .consulting-header h1 {
-    font-size: 28px;
-    margin: 0 10px;
+  .consulting-header h1{
+    font-size: 22px;
   }
-
-  form .row {
+  form .row{
     flex-direction: column;
   }
-
-  .row .field {
-    margin-bottom: 10px;
-    margin-right: 0;
+  .row .field{
+    margin: 5px 0;
   }
-
-  .btn-sumbit {
+  .btn-sumbit{
     width: 100%;
   }
-
 }

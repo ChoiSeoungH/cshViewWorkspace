@@ -5,31 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- jQuery CDN -->
+  <!-- jquery  -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <!-- slick.js -->
-  <script src="slick/slick.min.js"></script>
-  <link rel="stylesheet" href="slick/slick.css">
-  <link rel="stylesheet" href="slick/slick-theme.css">
+  <!-- <script src="slick/slick.min.js"></script> -->
+  <!-- <link rel="stylesheet" href="slick/slick.css"> -->
+  <!-- <link rel="stylesheet" href="slick/slick-theme.css"> -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- 우리가 만든것은 리소스 밑에 적용할 수 있도록 한다 -->
+  <link rel="stylesheet" href="slider.css">
 
-  <style>
-    body {
-      background-color: palevioletred;
-    }
-
-    .myslider {
-      margin: auto;
-      width: 600px;
-      border: 1px solid black;
-      background-color: #eee;
-      font-size: 30px;
-    }
-
-    .myslider div {
-      height: 300px;
-      border: 1px solid blue;
-    }
-  </style>
 </head>
 
 <body>
@@ -47,8 +34,26 @@
 </body>
 
 </html>
-
 <script>
+  $('.myslider').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+  $('.myslider').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 200,
+    fade: true,
+    cssEase: 'linear',
+    // speed: 200
+  });
   $('.myslider').slick({
     dots: true,
     infinite: false,
