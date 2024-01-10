@@ -1,0 +1,117 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:300,400,500,700,700&display=swap');
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* reset CSS */
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Noto Sans KR' , sans-serif; */
+}
+
+button,
+input,
+textarea,
+select {
+  /* font-family: 'Noto Sans KR' , sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.container {
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header.active .inb-inner {
+  display: none;
+}
+
+header.active .gnb-inner {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 3px 3px #000;
+}
+
+.inb-inner {
+  background-color: crimson;
+  height: 30px;
+  line-height: 30px;
+}
+
+.gnb-inner {
+  background-color: black;
+  height: 80px;
+  line-height: 80px;
+}
+
+section {}
+
+section p {
+  color: #ddd;
+  font-size: 3em;
+  line-height: 2em;
+}
+
+.btn-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 30px;
+  background-color: crimson;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.btn-top.active {
+  opacity: 1;
+  transform: translateY(0);
+}

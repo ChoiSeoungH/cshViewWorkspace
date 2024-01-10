@@ -53,3 +53,13 @@ Z
 *Ex02_basicCss/ex05_외부여백margin.html,4\0\4032d74a388870b8b17325a53463219fbe0624d3
 U
 %Ex02_basicCss/ex07_내부여백2.html,d\5\d524f319adaa9e45393385756563f5070f314e3f
+9
+	test.html,5\0\5017803b9ee9b00cc52db4a18a64b71cfc076fd7
+M
+Ex10_스크롤러/slider.html,4\e\4ed8d8840ff374517a705996467e1790ffbe3419
+M
+Ex10_스크롤러/practice.js,c\a\caaccf7a991d86d3fbb7c4aeef77bf905cefa9a5
+O
+Ex10_스크롤러/practice.html,1\0\103a042c3c43ebad97f86d20a36fe37cd2bd40cf
+L
+Ex10_스크롤러/index.html,8\6\86cf9e5e73f145ee19ffc2a66d61e48f28293893
