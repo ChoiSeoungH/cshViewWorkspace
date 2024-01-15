@@ -20,6 +20,7 @@ let cat = {
     name: '박연미'
   }
 }
+
 // 객체를 요소 동적으로 가져오기
 function getValue(obj, key) {
   if (obj[key] === undefined) {
@@ -27,7 +28,8 @@ function getValue(obj, key) {
   }
   return obj[key];
 }
-// 객체를 요소 동적으로 추가하기 
+
+// 객체를 요소 동적으로 추가하기
 function addKey(obj, key, value) {
   if (!!obj[key]) {
     return '키값이 이미 있습니다';
@@ -35,7 +37,8 @@ function addKey(obj, key, value) {
   obj[key] = value;
   return obj;
 }
-// 객체를 요소 동적으로 삭제하기 
+
+// 객체를 요소 동적으로 삭제하기
 function removeKey(obj, key) {
   // console.log(!obj[key]);
   if (!obj[key]) {
@@ -51,7 +54,7 @@ function printKey(obj, key) {
   // } else {
   //   '없는 키값입니다'
   // }
-  return obj ? .key ? obj[key] : '없는 키값입니다';
+  key ? obj[key] : '없는 키값입니다';
 }
 
 console.log(getValue(cat, 'test'));
@@ -78,13 +81,13 @@ let num = 0;
 console.log(num || -1); // num false이기 때문에 
 console.log(num && -1);
 console.log('--------');
-console.log(num ? ? -1);
+console.log(num ?? -1);
 console.log(null || '1');
-console.log(null ? ? '1');
-console.log(undefined ? ? '1');
+console.log(null ?? '1');
+console.log(undefined ?? '1');
 
 console.log('' || 1);
-console.log('' ? ? 1);
+console.log('' ?? 1);
 console.log('--------')
 console.log(NaN || 1);
-console.log(NaN ? ? 1);
+console.log(NaN ?? 1);
