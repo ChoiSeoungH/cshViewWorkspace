@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-
 <body>
 <main>
   <div class="button-wrapper">
@@ -14,45 +12,45 @@
     <button class="descending">내림차순</button>
   </div>
   <ul class="user_list">
-
   </ul>
 </main>
-</body>
 
-</html>
 <script>
   // 데이터
   const userDataList = [
-    {id: 2, name: '곰'},
-    {id: 10, name: '여우'},
-    {id: 4, name: '사자'},
-    {id: 29, name: '기린'},
-    {id: 101, name: '호랑이'}
+    { id: 2, name: '곰' },
+    { id: 10, name: '여우' },
+    { id: 4, name: '사자' },
+    { id: 29, name: '기린' },
+    { id: 101, name: '호랑이' }
   ];
   const ascending = document.querySelector('.ascending');
   const descending = document.querySelector('.descending');
   const userList = document.querySelector('.user_list');
 
-  function printList(list) {
-    list.forEach((u) => {
-      userList.innerHTML += `<li>${u.id} : ${u.name}</li>`;
-    });
-  }
-
-  function clearList() {
+  function clearList() {//초기화
     userList.innerHTML = '';
   }
 
-  ascending.addEventListener('click', () => {
+  function addList(sortedList) {
+    sortedList.forEach(u => {
+      let list = document.createElement('li');
+      list.innerHTML += `${u.id} : ${u.name}`
+      userList.append(list);
+    });
+  }
+
+  ascending.addEventListener('click', () => { //오름차순 정렬
     clearList();
     let list = [...userDataList].sort((a, b) => a.id - b.id);
-    printList(list);
-  })
-  descending.addEventListener('click', () => {
+    addList(list);
+  });
+
+  descending.addEventListener('click', () => { //내림차순 정렬
     clearList();
     let list = [...userDataList].sort((a, b) => b.id - a.id);
-    printList(list);
-  })
-
-
+    addList(list);
+  });
 </script>
+</body>
+</html>

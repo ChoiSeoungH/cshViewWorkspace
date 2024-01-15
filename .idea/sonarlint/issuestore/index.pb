@@ -13,8 +13,6 @@ M
 javascriptEx/ex27Context.html,0\d\0d08e31063d92565e09ff121ececf70244d8e767
 N
 javascriptEx/ex28Context2.html,4\7\47679fb77fb55a959085e9e63b1a3ba4361bcf7d
-D
-javascriptEx/ex28.js,8\d\8dc64d9c4863a29b6f505038fc770a185f3ef75f
 Q
 !javascriptEx/ex30thisÎ∞îÏù∏Îî©.js,2\1\21e0dcfe8cdab8185ef67879c26dae52962465cb
 8
@@ -145,10 +143,6 @@ Z
 Å
 Q.idea/sonarlint/securityhotspotstore/9/b/9bb24c1d628385b6438c0795f5ce8f354962a09e,c\e\cedbef345df126084335c5cb9e23f109033212e9
 Å
-Q.idea/sonarlint/securityhotspotstore/e/b/ebedc26d2dd6f6a61781d03a69ef18de0a5ae8f0,7\b\7b8aa48fe109936788f5a757058911001e778f35
-w
-G.idea/sonarlint/issuestore/e/b/ebedc26d2dd6f6a61781d03a69ef18de0a5ae8f0,e\8\e8897778ea26119f13e85d4554c5819ecd8cdb9f
-Å
 Q.idea/sonarlint/securityhotspotstore/0/d/0d08e31063d92565e09ff121ececf70244d8e767,c\d\cd9c43fac204ee445a994a8cc5a926a8c8260ce3
 w
 G.idea/sonarlint/issuestore/4/7/47679fb77fb55a959085e9e63b1a3ba4361bcf7d,a\c\acb2665c2e112388d9035e35a392b7c6b59b714b
@@ -162,8 +156,6 @@ w
 G.idea/sonarlint/issuestore/2/1/21e0dcfe8cdab8185ef67879c26dae52962465cb,9\c\9c0eb25e5ba0028b836954e599459f0ce348f0df
 Å
 Q.idea/sonarlint/securityhotspotstore/2/1/21e0dcfe8cdab8185ef67879c26dae52962465cb,c\c\cc2f6ffe409aed84c1d14798e1943ed9b7fc5d70
-Å
-Q.idea/sonarlint/securityhotspotstore/5/9/59cd174a93ae8ddda1be692f32b03df67079880c,9\9\992526b6e128942f56945247b20da88639a1268c
 Å
 Q.idea/sonarlint/securityhotspotstore/f/b/fb5d199b28b3f04ad020341d01d36eb234b8681d,3\6\3663d9d7b37323a38963147efbb16cf4e1bc2ebd
 w
@@ -2114,41 +2106,49 @@ G.idea/sonarlint/issuestore/f/4/f48c8a12332a130721468f69de1d32cf8cc3b446,7\c\7c
 Q.idea/sonarlint/securityhotspotstore/6/4/649843c99492531069428af75b166fe619b0422e,0\1\01468ea675e236d5f19df622a6679113107eaa9d
 Å
 Q.idea/sonarlint/securityhotspotstore/3/0/30a5c5346ae8a7e5f39d6bc8eba8fed69684aa74,7\c\7c431648f27b1f709476bd79a031c17e60f6734b
+O
+html-css-js/ex01basic/ex12.html,e\2\e28ef7d21a1cc78f1cd4ce47b662738500825c92
+O
+html-css-js/ex01basic/ex11.html,b\8\b8e3f4e0620018beca3d6e525255f6f231cfd08b
+O
+html-css-js/ex01basic/ex10.html,9\e\9e9da67351f539b3d64033ae6907951c7cc612f0
+_
+/html-css-js/ex01basic/ex09Í≥†Ï∞®Ìï®ÏàòÏó∞Ïäµ.js,e\b\eb89d077b0047a5d08ec43023d27489ed49ca7e2
+[
++html-css-js/ex01basic/ex08ÏÇ∞Ïà†Î¨∏Ï†ú.html,d\1\d1387c5719fb30836312c52fd9a379942eb1afb6
+O
+html-css-js/ex01basic/ex04.html,c\e\cec4a3de8d91ec5d55595870e737756868b718c7
+O
+html-css-js/ex01basic/ex07.html,4\7\47135fa14b61943bb4a9795cf6692472ce4d5439
 ?
 html-css-js/tet,4\1\41b946f20dcd0836e27bbfa8bfc7e1bc7f4dab1d
-N
-html-css-js/ex01basic/ex2.html,d\8\d8f81f39843f708887fe489510f6c6c446e5c29b
-N
-html-css-js/ex01basic/ex1.html,b\0\b0f8fbcaa601b19b36afa49a2aa9874c197a7d2d
+O
+html-css-js/ex01basic/ex05.html,6\9\699643a2db9c1e7542d3020b6943d7a23ecd7ba4
 O
 html-css-js/ex01basic/ex03.html,a\c\aca5a04f740f4787a00e08c0dcd9700da5b6a2cd
+O
+html-css-js/ex01basic/ex06.html,6\9\69d02a6cf150acd56f94a813b3ee5fa9327c378d
+O
+html-css-js/ex01basic/ex01.html,9\d\9d16575e6572ee28d14c6c7d4b5a764d823d3557
+O
+html-css-js/ex02event1/index.js,c\f\cf48ac63b4c19065a29a8731c6439daa75a09b05
+w
+G.idea/sonarlint/issuestore/e/2/e28ef7d21a1cc78f1cd4ce47b662738500825c92,0\6\06c2f8e96e5845fd6b7f71a25c9d1165634deeab
+Å
+Q.idea/sonarlint/securityhotspotstore/e/2/e28ef7d21a1cc78f1cd4ce47b662738500825c92,8\a\8ac155aeb5a700a9839f7012a8a32d99591ccc82
+O
+html-css-js/ex01basic/ex02.html,b\6\b6d044edcd5aef00615fa478e892785dd93f14a9
 Q
 !html-css-js/ex02event1/index.html,9\7\978f7ff9be7d2b6dc85e8c4554bfbcb90deedb3d
 P
  html-css-js/ex02event1/style.css,e\a\eaf66cf68308cbaed60c5acaeef9c1c960097131
-O
-html-css-js/ex02event1/index.js,c\f\cf48ac63b4c19065a29a8731c6439daa75a09b05
-O
-html-css-js/ex01basic/ex04.html,c\e\cec4a3de8d91ec5d55595870e737756868b718c7
-O
-html-css-js/ex01basic/ex05.html,6\9\699643a2db9c1e7542d3020b6943d7a23ecd7ba4
-O
-html-css-js/ex01basic/ex06.html,6\9\69d02a6cf150acd56f94a813b3ee5fa9327c378d
-O
-html-css-js/ex01basic/ex07.html,4\7\47135fa14b61943bb4a9795cf6692472ce4d5439
-O
-html-css-js/ex01basic/ex02.html,b\6\b6d044edcd5aef00615fa478e892785dd93f14a9
-O
-html-css-js/ex01basic/ex01.html,9\d\9d16575e6572ee28d14c6c7d4b5a764d823d3557
-O
-html-css-js/ex01basic/ex08.html,c\a\ca6d1c73714872fba3ee6bad78ae842a57e24dad
-M
-html-css-js/ex01basic/ex09.js,b\f\bfb7f56a922e9ecd6dc521d0be847faada51639a
-V
-&html-css-js/ex01basic/ex08_Ï†ïÎãµ.html,b\e\be60df10e3d182da352c9b9aa6a0d236aaa288dc
-O
-html-css-js/ex01basic/ex10.html,9\e\9e9da67351f539b3d64033ae6907951c7cc612f0
-O
-html-css-js/ex01basic/ex11.html,b\8\b8e3f4e0620018beca3d6e525255f6f231cfd08b
-O
-html-css-js/ex01basic/ex12.html,e\2\e28ef7d21a1cc78f1cd4ce47b662738500825c92
+Å
+Q.idea/sonarlint/securityhotspotstore/e/b/eb89d077b0047a5d08ec43023d27489ed49ca7e2,d\b\db042878c904c8869118d8b42bf0b0fc07d66e64
+Å
+Q.idea/sonarlint/securityhotspotstore/b/8/b8e3f4e0620018beca3d6e525255f6f231cfd08b,f\6\f6b6f30c26d7a4e1a1311db4199987d333c03e27
+w
+G.idea/sonarlint/issuestore/e/b/eb89d077b0047a5d08ec43023d27489ed49ca7e2,5\f\5f39b8edded464eab1be7db1db62cea5ea3f70eb
+Å
+Q.idea/sonarlint/securityhotspotstore/9/e/9e9da67351f539b3d64033ae6907951c7cc612f0,c\9\c9a6d5bdcc13f322511a8c79c76b4452542ea667
+Å
+Q.idea/sonarlint/securityhotspotstore/d/1/d1387c5719fb30836312c52fd9a379942eb1afb6,4\e\4eca27ed488038247d0a92433ebf14351724815b
