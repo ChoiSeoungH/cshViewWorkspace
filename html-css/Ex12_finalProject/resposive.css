@@ -33,7 +33,7 @@
   }
 
   .trigger span {
-    background-color: bisque;
+    background-color: rgb(78, 77, 77);
     height: 3px;
     width: 100%;
     /* display: block; */
