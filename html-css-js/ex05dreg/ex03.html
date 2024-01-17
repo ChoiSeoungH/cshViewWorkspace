@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      .list {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .zone1,
+      .zone2 {
+          width: 300px;
+          height: 300px;
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+      }
+
+      .box {
+          background-color: palevioletred;
+          width: 50px;
+          height: 50px;
+          margin: 10px;
+      }
+  </style>
+</head>
+
+<body>
+<div class="list">
+  <div class="zone1">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+  <div class="zone2"></div>
+</div>
+</body>
+
+</html>
+<script>
+  const list = document.querySelector(".list");
+  const boxes = [...document.querySelectorAll(".box")];
+  const zone2 = document.querySelector('.zone2');
+
+  boxes.forEach((box) => {
+    box.setAttribute("draggable", "true");
+    box.addEventListener('dragstart', e => {
+      e.dataTransfer.setData('num', e.target.innerText);
+    })
+    //console.log(box);
+  })
+
+
+  list.addEventListener('dragover', e => {
+    // 드레그오버를 할수있도록 기본이벤트 막기
+    e.preventDefault();
+    //console.log(e.target);
+    //
+
+  })
+
+  zone2.addEventListener('drop', e => {
+    e.preventDefault();
+    let num = e.dataTransfer.getData('num');
+    console.log('num=', num);
+    zone2.appendChild(boxes.find(box => box.innerText === num));
+  })
+
+</script>
