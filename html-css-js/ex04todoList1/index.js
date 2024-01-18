@@ -17,6 +17,12 @@ input.addEventListener('keypress', (e) => {
 function addLi() {
   if (!isValid(input.value)) return;
   addVal(input.value);
+  let del = document.querySelectorAll('.item_delete');
+  del.forEach(d=>{
+    d.addEventListener('click', (e)=>{
+      delList(d.children[0]);
+    });
+  })
   input.value = '';
 }
 
@@ -42,13 +48,12 @@ function addVal(val) {
         <button class="item_delete"> <i class="fa-solid fa-trash-can" data-id=${idx}></i> </button>
       </div>
     </li>`;
-  let del = document.querySelector('.item_delete');
-  del.addEventListener('click', (e)=>{
-    delList(e.target.firstChild);
-  });
+
 }
 
 function delList(t) {
-  let item = document.querySelector(`.item_row[data-id=${t.getAttribute('data-id')}`);
+  let id = t.getAttribute('data-id');
+  let item = document.querySelector(`.item_row[data-id=${id}]`);
   items.removeChild(item);
 }
+
