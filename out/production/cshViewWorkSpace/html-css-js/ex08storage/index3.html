@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+<form id="saveForm">
+  <input type="text">
+  <input type="submit" value="저장하기">
+</form>
+<form id="deleteForm">
+  <input type="text">
+  <input type="submit" value="삭제하기">
+</form>
+<div class="save"></div>
+</body>
+
+</html>
+<script>
+  const form = document.querySelector('form');
+  const input = form.querySelector('input');
+  const save = document.querySelector('.save');
+  const delForm = document.querySelector('form[id="deleteForm"]');
+  const delInput = delForm.querySelector('input');
+
+  const savedArray = JSON.parse(localStorage.getItem('array'));
+  if (savedArray) {
+    save.innerHTML = savedArray.join(', ');
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let array;
+    if (localStorage.getItem('array')) {
+      array = JSON.parse(localStorage.getItem('array'));
+    } else {
+      array = [];
+    }
+    array.push(input.value);
+
+    localStorage.setItem('array', JSON.stringify(array));
+
+    window.location.reload();
+  })
+
+  delForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let array;
+    if (localStorage.getItem('array')) {
+      array = JSON.parse(localStorage.getItem('array'));
+    } else {
+      alert('배열이 없습니다.')
+      return;
+    }
+    let idx = array.findIndex(d => d === delInput.value);
+    if (idx!==-1) {
+      array.splice(idx,1);
+    }else{
+      alert('일치하는 값이 없습니다.')
+    }
+    localStorage.setItem('array', JSON.stringify(array));
+
+    window.location.reload();
+  })
+</script>

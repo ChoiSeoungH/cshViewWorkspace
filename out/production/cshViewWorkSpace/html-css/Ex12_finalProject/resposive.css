@@ -1,0 +1,73 @@
+@media screen and (max-width:768px) {
+  body {
+    width: 100vw;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .inner {
+    width: 100%;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .gnb {
+    display: none;
+  }
+
+  header.active {
+    background: none;
+  }
+
+  .trigger {
+    /* border: 2px solid black; */
+    width: 25px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .trigger span {
+    background-color: rgb(78, 77, 77);
+    height: 3px;
+    width: 100%;
+    /* display: block; */
+    position: absolute;
+
+    transition: 0.3s;
+  }
+
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+
+  .trigger span:nth-child(2) {
+    top: 50%;
+  }
+
+  .trigger span:nth-child(3) {
+    top: 100%
+  }
+
+  .trigger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+
+  .trigger.active span:nth-child(2) {
+    /* top: 50%; */
+    /* 투명도를 0으로 해준것  */
+    opacity: 0;
+  }
+
+  .trigger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%
+  }
+
+}

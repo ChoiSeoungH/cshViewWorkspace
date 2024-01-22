@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* 
+    
+    box-sizing: border-box => 원칙적으로 자식요소가 
+    부모요소를 넘지를 못한다 
+    
+    부모의 width 고정 => 자식이 넘쳐도 content가 고정 
+    
+    flex-basis: 부모의 크기가 자식에 맞춰서 다시 유동적으로 변한다 
+    
+    */
+
+    .flex-item {
+      /* width: 33.33333%; */
+      flex-basis: 33.33333%;
+
+      box-sizing: border-box;
+      padding: 5px;
+      color: white;
+      background: mediumseagreen;
+    }
+
+    .box {
+      /* 보이는 화면에 50% 크기 */
+      width: 50vw;
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="flex-item">Lorem, ipsum.</div>
+    <div class="flex-item">
+      <div class="box">BOX</div>
+    </div>
+    <div class="flex-item">Lorem, ipsum dolor.</div>
+    <div class="flex-item">Lorem, ipsum.</div>
+    <div class="flex-item">B</div>
+    <div class="flex-item">Lorem, ipsum dolor.</div>
+  </div>
+</body>
+
+</html>

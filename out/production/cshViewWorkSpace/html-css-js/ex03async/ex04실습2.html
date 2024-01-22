@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter Example</title>
+</head>
+<body>
+<h1>0</h1>
+<button class="btn1">시작</button>
+<button class="btn2">1초 뒤에 초기화</button>
+<button class="btn3">완전 종료</button>
+
+<script>
+  let count = 0;
+  let h1 = document.getElementById('h1');
+  let interval ;
+  let btns = document.querySelectorAll('button');
+
+  btns[0].addEventListener('click', () => {// 0.05초마다 카운트 증가
+    interval = setInterval(() => {
+      count++;
+      h1.textContent = count;
+    }, 50);
+  });
+
+  btns[1].addEventListener('click', () => {// 1초 뒤에 초기화
+    setTimeout(() => {
+      count = 0;
+      h1.textContent = count;
+    }, 1000);
+  });
+
+  btns[2].addEventListener('click', () => {// 카운트 종료
+    clearInterval(interval);
+  });
+</script>
+</body>
+</html>

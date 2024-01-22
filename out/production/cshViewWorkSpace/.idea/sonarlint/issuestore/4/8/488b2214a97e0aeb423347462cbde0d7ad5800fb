@@ -1,0 +1,14 @@
+
+Xjavascript:S1854L"7Remove this useless assignment to variable "bestScore".(ã¸Ì¢şÿÿÿÿ
+pjavascript:S3776["TRefactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.(ï­ß
+Kjavascript:S3504")Unexpected var, use let or const instead.(íàà‘ûÿÿÿÿ
+Fjavascript:S3504")Unexpected var, use let or const instead.(÷¬¸
+qjavascript:S3776•"TRefactor this function to reduce its Cognitive Complexity from 34 to the 15 allowed.(ÑŠÉ
+Fjavascript:S3504")Unexpected var, use let or const instead.(ãÛ«‹
+Kjavascript:S3504")Unexpected var, use let or const instead.(²£”úÿÿÿÿ
+Ejavascript:S3504Ÿ")Unexpected var, use let or const instead.(•Œë
+Fjavascript:S3504 ")Unexpected var, use let or const instead.(ß¿ÿø
+ajavascript:S6660±"?'If' statement should not be the only statement in 'else' block(ó®Ôüıÿÿÿÿ
+ajavascript:S6660»"?'If' statement should not be the only statement in 'else' block(ê¬‘µúÿÿÿÿ
+\javascript:S6660Ã"?'If' statement should not be the only statement in 'else' block(¡»Ê 
+Kjavascript:S2094ö")Unexpected class with only a constructor.(ş•±­øÿÿÿÿ

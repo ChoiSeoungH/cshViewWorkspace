@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <style>
+      .box {
+          width: 50px;
+          height: 50px;
+          background-color: royalblue;
+          margin: 5px 0;
+          position: relative;
+      }
+      #upDown{
+          background: purple;
+      }
+  </style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box" id="upDown"></div>
+</body>
+</html>
+
+<script>
+  let boxes = document.querySelectorAll('.box');
+  let body = document.querySelectorAll('body');
+  boxes.forEach(box => {
+    box.addEventListener('click', () => {
+      if (box.id==='upDown') {
+        let x = 0;
+        let direction = 1; // 1 for down, -1 for up
+        let interval = setInterval(() => {
+          if (x === body.style.height-box.style.height) {
+            direction = -1; // change direction to up
+          } else if (x === 0) {
+            direction = 1; // change direction to down
+          }
+          box.style.bottom = `${x}px`;
+          x += direction;
+        }, 1)
+      } else {
+        let x = 0;
+        let interval = setInterval(() => {
+          if (x === 500) {
+            clearInterval(interval);
+          }
+          box.style.left = `${x}px`;
+          x += 1;
+        }, 1)
+      }
+    })
+  })
+</script>

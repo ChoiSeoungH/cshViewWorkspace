@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      #canvas {
+          border: 1px solid black;
+      }
+  </style>
+</head>
+<body>
+<canvas id="canvas" width="800" height="400">
+</canvas>
+</body>
+</html>
+
+<script>
+  const canvas = document.querySelector("#canvas");
+  const ctx = canvas.getContext("2d");
+
+  ctx.fillStyle = 'green';
+  ctx.fillRect(0, 0, 50, 50);
+  let x = 0;
+  let y = 0;
+  let dx = 0;
+  let dy = 0;
+
+  function moveRect() {
+    if (x + dx < 0 || y + dy < 0 || x + dx > canvas.width-50 || y + dy > canvas.height-50) {
+      return;
+    }
+    x += dx;
+    y += dy;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'green';
+    ctx.fillRect(x, y, 50, 50);
+    requestAnimationFrame(moveRect);
+  }
+
+  function setCoordinate(e) {
+    switch (e.key) {
+      case 'w':
+        dy = -2;
+        break;
+      case 'a':
+        dx = -2;
+        break;
+      case 's':
+        dy = 2;
+        break;
+      case 'd':
+        dx = 2;
+        break;
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    setCoordinate(e);
+    moveRect();
+  })
+
+  document.addEventListener('keyup', (e) => {
+    dx = 0;
+    dy = 0;
+  })
+</script>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .list {
+      border: 1px solid black;
+      width: 500px;
+      height: 800px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: pink;
+      border: 1px solid red;
+      margin: 5px;
+    }
+
+    #first {
+      background-color: aqua;
+    }
+
+    button {
+      border: none;
+      font-size: 1.2em;
+      padding: 20px;
+      background-color: royalblue;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="btn1"> 박스 추가 </button>
+  <button class="btn2"> 박스 삭제 </button>
+  <div class="list">
+    <div id="first" class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+
+</body>
+
+</html>
+<script>
+  const list = document.querySelector('.list');
+  let boxs = document.querySelectorAll('.box');
+  const buttons = document.querySelectorAll('button');
+  //console.log(buttons[0]);
+  //console.log(buttons[1]);
+  //div 객체 생성
+  // const newbox = document.createElement('div'); // <div></div>
+  // newbox.classList.add('box');// <div class="box"></div>
+  // console.log(newbox);
+  // list.appendChild(newbox);
+  // list.removeChild(boxs[0]);
+
+  // function addBox(target) {
+  //   console.log(traget)
+  //   const newbox = document.createElement('div');
+  //   newbox.classList.add('box');
+  //   list.appendChild(newbox);
+  // }
+
+  buttons[0].addEventListener("click", () => {
+    const newbox = document.createElement('div');
+    newbox.classList.add('box');
+    list.appendChild(newbox);
+    alert('박스 추가 완료');
+  });
+
+  buttons[1].addEventListener("click", () => {
+    boxs = document.querySelectorAll('.box');
+    // console.log('test=', boxs);
+    if (boxs.length === 0) {
+      alert('더이상 삭제할 박스가 없습니다')
+      return;
+    }
+    list.removeChild(boxs[0]);
+    alert('박스 삭제 완료');
+  })
+</script>

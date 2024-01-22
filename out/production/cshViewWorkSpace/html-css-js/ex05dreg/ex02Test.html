@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      .container {
+          margin-top: 10px;
+          display: flex;
+      }
+
+      .box {
+          width: 40px;
+          height: 40px;
+          border: 1px solid black;
+          margin-left: 10px;
+          font-size: 30px;
+          line-height: 40px;
+          text-align: center;
+      }
+
+      input {
+          width: 80px;
+          font-size: 20px;
+          margin: 10px 5px;
+
+      }
+
+      .trash {
+          width: 500px;
+          height: 100px;
+          border: 1px solid black;
+          margin: 10px;
+      }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+<input type="text">
+<div class="trash"></div>
+</body>
+
+</html>
+
+<script>
+  const boxes = [...document.querySelectorAll('.box')];
+  const input = document.querySelector('input[type=text]');
+  const trash = document.querySelector('.trash');
+  let cnt = 0;
+  setTrash();
+
+  boxes.forEach(box => {
+    increase(box);
+    moveBox(box);
+  })
+
+  function increase(box) {
+    box.addEventListener('click', () => {
+      box.innerText = ++cnt;
+    })
+  }
+
+  let draggedBox = undefined;
+  function moveBox(box) {
+    box.setAttribute('draggable', 'true');
+    box.addEventListener('dragstart', (e) => {
+      draggedBox = box;
+      box.style.backgroundColor = 'green';
+      e.dataTransfer.setData('num', e.target.innerText);
+    });
+    box.addEventListener('dragend', (e) => {
+      e.preventDefault();
+      e.target.style.background = 'none';
+    });
+  }
+  function setTrash() {
+    trash.addEventListener('dragover', (e) => {
+      e.preventDefault();
+    });
+    trash.addEventListener('drop', (e) => {
+      e.preventDefault();
+
+      let num = e.dataTransfer.getData('num');
+      if (!num) return;
+      console.log('num=', num);
+      if (boxes.find(box => box.innerText === num)) {
+        boxes.find(box => box.innerText === num).remove();
+      }
+    });
+  }
+
+  input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      deleteText(500);
+    }
+  })
+
+  function deleteText(time) {
+    let box = boxes.find(b => b.innerText === input.value);
+    if (box) {
+      box.style.backgroundColor = 'red';
+      setTimeout(() => {
+        box.style.backgroundColor = 'white';
+        box.innerText = '';
+      }, time);
+    }
+    input.value = '';
+  }
+
+
+</script>

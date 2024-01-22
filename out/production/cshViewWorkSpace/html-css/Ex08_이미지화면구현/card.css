@@ -1,0 +1,91 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:300,400,500,700,700&display=swap');
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* reset CSS */
+a{ text-decoration: none; color: #222;}
+h1,h2,h3,h4,h5,h6{ margin: 0; font-weight: normal;}
+button{ cursor: pointer; outline: none; border: none;}
+input,textarea,select{
+  outline: none;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  font-family: 'Montserrat' , sans-serif;
+  /* font-family: 'Noto Sans KR' , sans-serif; */
+}
+.container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  height: 400px;
+  width: 300px;
+  margin: 10px;
+  position: relative;
+
+  overflow: hidden;
+}
+.content{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  padding: 20px;
+  color: #fff;
+  box-sizing: border-box;
+
+  text-align: center;
+  padding-top: 150px;
+  transition: 0.3s;
+
+}
+.card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px #00000065;
+}
+.card:hover .content{
+  top: 0;
+}
+.card:nth-child(1) .content{
+  background: linear-gradient(to top, crimson,transparent);
+}
+.card:nth-child(2) .content{
+  background: linear-gradient(to top, dodgerblue,transparent);
+}
+.card:nth-child(3) .content{
+  background: linear-gradient(to top, yellowgreen,transparent);
+}
+
+.content h2{
+  font-size: 30px;
+}
+.content h2 span{
+  font-size: 14px;
+  color: gold;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+}
+
+/* .sns{} */
+.sns a{
+  color: #fff;
+  border: 1px solid #fff;
+  /* a 태그는 인라인 속성이기 때문에 크기값인 width, height 값을 못준다 */
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  line-height: 20px;
+  /* text-align: center;  content 에서 상속 받아옴 */
+  border-radius: 50%;
+  font-size: 13px;
+}
+
+

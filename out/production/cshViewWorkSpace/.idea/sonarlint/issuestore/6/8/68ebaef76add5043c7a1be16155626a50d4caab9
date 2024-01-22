@@ -1,0 +1,20 @@
+
+Yjavascript:S1125"6Refactor the code to avoid using this boolean literal.(îê•È8ò…þ¶Ï1
+‚javascript:S6638"_Unexpected constant binary expression. Compares constantly with the left-hand side of the `==`.(îê•È8ò…þ¶Ï1
+rjavascript:S3403:"JRemove this "!==" check; it will always be true. Did you mean to use "!="?( Ôµ×ûÿÿÿÿ8Ù¾•ÔÐ1
+Yjavascript:S1125;"6Refactor the code to avoid using this boolean literal.(åÕ÷Þ8Ù¾•ÔÐ1
+^javascript:S1125h"6Refactor the code to avoid using this boolean literal.(Ç²ÁÒþÿÿÿÿ8Ù¾•ÔÐ1
+rjavascript:S6638h"JUnexpected constant truthiness on the left-hand side of a `||` expression.(Ç²ÁÒþÿÿÿÿ8Ù¾•ÔÐ1
+^javascript:S1125i"6Refactor the code to avoid using this boolean literal.(÷ë·¼ûÿÿÿÿ8Ù¾•ÔÐ1
+rjavascript:S6638i"JUnexpected constant truthiness on the left-hand side of a `||` expression.(÷ë·¼ûÿÿÿÿ8Ù¾•ÔÐ1
+^javascript:S1125k"6Refactor the code to avoid using this boolean literal.(Œ¨Ð¦ÿÿÿÿÿ8Ù¾•ÔÐ1
+rjavascript:S6638k"JUnexpected constant truthiness on the left-hand side of a `&&` expression.(Œ¨Ð¦ÿÿÿÿÿ8Ù¾•ÔÐ1
+^javascript:S1125l"6Refactor the code to avoid using this boolean literal.(´œÄÓùÿÿÿÿ8Ù¾•ÔÐ1
+rjavascript:S6638l"JUnexpected constant truthiness on the left-hand side of a `&&` expression.(´œÄÓùÿÿÿÿ8Ù¾•ÔÐ1
+rjavascript:S6638n"JUnexpected constant truthiness on the left-hand side of a `&&` expression.(ÔûÀ¢øÿÿÿÿ8Ú¾•ÔÐ1
+^javascript:S1125n"6Refactor the code to avoid using this boolean literal.(ÔûÀ¢øÿÿÿÿ8Ú¾•ÔÐ1
+rjavascript:S6638n"JUnexpected constant truthiness on the left-hand side of a `&&` expression.(ÔûÀ¢øÿÿÿÿ8Ú¾•ÔÐ1
+^javascript:S1125n"6Refactor the code to avoid using this boolean literal.(ÔûÀ¢øÿÿÿÿ8Ú¾•ÔÐ1
+rjavascript:S6638o"JUnexpected constant truthiness on the left-hand side of a `||` expression.(ÄßŒ´ýÿÿÿÿ8Ú¾•ÔÐ1
+^javascript:S1125o"6Refactor the code to avoid using this boolean literal.(ÄßŒ´ýÿÿÿÿ8Ú¾•ÔÐ1
+rjavascript:S6638o"JUnexpected constant truthiness on the left-hand side of a `||` expression.(ÄßŒ´ýÿÿÿÿ8Ú¾•ÔÐ1
