@@ -1,4 +1,4 @@
-class Poop {
+export default class Poop {
   constructor() {
     this.img = new Image();
     this.img.src = './img/poop.png';
@@ -9,7 +9,7 @@ class Poop {
 
     this.x = null;
     this.y = null;
-    // 크기값 
+    // 크기값
     this.w = 20;
     this.h = 15;
 
@@ -19,7 +19,7 @@ class Poop {
 
   reset() {
     this.y = -40;
-    this.x = Math.floor(Math.random() * (400 - this.h * 2)); // 400 캔버스 안에 들어와야되고 20-20 => 40 > 
+    this.x = Math.floor(Math.random() * (400 - this.h * 2)); // 400 캔버스 안에 들어와야되고 20-20 => 40 >
     this.speed = Math.random() * 5 + 2;
   }
 
@@ -34,9 +34,9 @@ class Poop {
 
   checkCollision(p) {
     if (p.x < this.x + this.w &&
-      p.y < this.y + this.h &&
-      p.x + p.w > this.x &&
-      p.y + p.h > this.y) {
+        p.y < this.y + this.h &&
+        p.x + p.w > this.x &&
+        p.y + p.h > this.y) {
       return true;
     }
     return false;

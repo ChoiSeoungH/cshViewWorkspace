@@ -1,58 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+      #curve{
+          fill: none;
+      }
+      text {
+          font-size: 30px; /* 글자 크기를 조정합니다 */
+      }
+  </style>
 </head>
 
 <body>
-<main>
-  <div class="button-wrapper">
-    <button class="ascending">오름차순</button>
-    <button class="descending">내림차순</button>
-  </div>
-  <ul class="user_list">
-
-  </ul>
-</main>
-</body>
-
-</html>
-<script>
-  // 데이터
-  const userDataList = [
-    {id: 2, name: '곰'},
-    {id: 10, name: '여우'},
-    {id: 4, name: '사자'},
-    {id: 29, name: '기린'},
-    {id: 101, name: '호랑이'}
-  ];
-  const ascending = document.querySelector('.ascending');
-  const descending = document.querySelector('.descending');
-  const userList = document.querySelector('.user_list');
-
-  function printList(list) {
-    list.forEach((u) => {
-      userList.innerHTML += `<li>${u.id} : ${u.name}</li>`;
-    });
-  }
-
-  function clearList() {
-    userList.innerHTML = '';
-  }
-
-  ascending.addEventListener('click', () => {
-    clearList();
-    let list = [...userDataList].sort((a, b) => a.id - b.id);
-    printList(list);
-  })
-  descending.addEventListener('click', () => {
-    clearList();
-    let list = [...userDataList].sort((a, b) => b.id - a.id);
-    printList(list);
-  })
-
-
-</script>
+<svg viewBox="0 0 500 500">
+  <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+  <text width="500">
+    <textPath alignment-baseline="middle" xlink:href="#curve" startOffset="50%" text-anchor="middle">
+      미니 게임 천국
+    </textPath>
+  </text>
+</svg>
